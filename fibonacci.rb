@@ -18,11 +18,8 @@ end
 
 
 # using recursion
-#
 
 arr_of_fib_numbers = []
-
-
 
 def fibs_rec(num_until)
   if num_until < 2
@@ -43,21 +40,3 @@ end
 
 
 p arr_of_fib_numbers.reverse
-
-
-#alternate code - no while loop
-#def fibs_rec(num_until, arr=[])
-#   if num_until < 2
-#     return [num_until]
-#   else
-#     begin
-#       arr << [fibs_rec(num_until - 1) + fibs_rec(num_until - 2)]
-#     rescue NoMethodError => e
-#       puts "no"
-#     else
-#     end
-#   end
-#   return arr
-# end
-
-# p fibs_rec(answer)
